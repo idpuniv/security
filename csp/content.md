@@ -47,6 +47,47 @@ Content-Security-Policy: <directive> <valeurs>; <directive> <valeurs>; ...
 
 ---
 
+Dans cette ligne :
+
+```php
+$csp = "script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net;";
+```
+
+### 🔍 Détail :
+
+* **`script-src`** → c’est la **directive**.
+  Elle indique que tu définis les **sources autorisées pour charger/exécuter des scripts JavaScript** (`<script src="...">`, inline, eval, etc.).
+
+* **`'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net`** → ce sont les **valeurs associées à la directive**.
+
+---
+
+### 🧠 Représentation claire :
+
+| Élément                        | Rôle                                                          |
+| ------------------------------ | ------------------------------------------------------------- |
+| `script-src`                   | **Directive**                                                 |
+| `'self'`                       | Autorise les scripts **de ton propre domaine**                |
+| `'unsafe-inline'`              | Autorise les **scripts inline** (attention : ⚠️ peu sécurisé) |
+| `https://cdnjs.cloudflare.com` | Autorise les scripts depuis ce **CDN**                        |
+| `https://cdn.jsdelivr.net`     | Autorise les scripts depuis ce **CDN**                        |
+
+---
+
+### 🧩 Bonus :
+
+Tu peux imaginer ta CSP comme une liste de règles du genre :
+
+```
+[directive] [valeur1] [valeur2] [valeur3] ... ;
+```
+
+Chaque directive agit **comme une catégorie de contenu**, et chaque valeur **comme une règle d’autorisation**.
+
+---
+
+
+
 ## 🧪 Exemple complet sécurisé :
 
 ```http
