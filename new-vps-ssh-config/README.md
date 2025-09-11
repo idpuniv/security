@@ -28,10 +28,7 @@ PermitRootLogin no
 sudo systemctl restart ssh
 
 # Configure SSH pour utiliser la bonne clé
-
 nano ~/.ssh/config
-
-Ajoute ceci :
 
 Host github.com
     HostName github.com
