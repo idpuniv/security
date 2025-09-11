@@ -26,3 +26,16 @@ PermitRootLogin no
 
 # Redémarrer le service SSH
 sudo systemctl restart ssh
+
+# Configure SSH pour utiliser la bonne clé
+
+nano ~/.ssh/config
+
+Ajoute ceci :
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_vps_contabo
+    IdentitiesOnly yes
+
