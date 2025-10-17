@@ -3,7 +3,7 @@
 
 ## Liste des questions essentielles (avec réponses)
 
-### 1️**Comment faire pour avoir les logs de mon application dans Grafana (via Loki) ?**
+### 1️ **Comment faire pour avoir les logs de mon application dans Grafana (via Loki) ?**
 
 **Réponse :**
 Installe et configure **Promtail**, **Fluent Bit**, ou un **agent Loki** sur ton serveur.
@@ -11,7 +11,7 @@ Il collecte les logs (fichiers, journald, conteneurs…) et les envoie à **Loki
 
 ---
 
-### 2️**Quels logs dois-je monitorer ?**
+### 2️ **Quels logs dois-je monitorer ?**
 
  **Réponse :**
 
@@ -22,7 +22,7 @@ Il collecte les logs (fichiers, journald, conteneurs…) et les envoie à **Loki
 
 ---
 
-### 3️**Si je gère plusieurs sites ou applications, puis-je tout centraliser ?**
+### 3️ **Si je gère plusieurs sites ou applications, puis-je tout centraliser ?**
 
 **Réponse :**
 Oui. Tu peux centraliser les logs dans un **Loki unique**, en ajoutant des **labels (site, app, environnement, région)** pour filtrer et organiser les données.
