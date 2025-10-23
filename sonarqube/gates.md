@@ -21,3 +21,15 @@
 | **New Vulnerabilities**              | greater than  | 0         | Fail       |
 
 
+# Lecture des expressions des gates 
+
+| Métrique                     | Opérateur        | Valeur | Lecture                                                                 |
+|-------------------------------|----------------|--------|------------------------------------------------------------------------|
+| Issue                         | Is greater than | 0      | Ça échoue tant que le nombre de problèmes est supérieur à 0             |
+| Security Hotspots Reviewed    | Is less than    | 100%   | Ça échoue tant que le nombre de problèmes revus est inférieur à 100%   |
+| Coverage                      | Is less than    | 80%    | Ça échoue tant que la couverture est inférieure à 80%                  |
+| Duplicated Lines (%)          | Is greater than | 3%     | Ça échoue tant que le nombre de lignes dupliquées est supérieur à 3%   |
+
+
+Rating 
+Comprendre les regles (les metrics et les sens des operations)
